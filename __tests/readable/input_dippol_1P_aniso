@@ -1,0 +1,17 @@
+pos.xyz                              #File name of the pos file
+dippol_1P_aniso.dat                  #Name of the output file (3P aniso)
+center_mass_1P_aniso.xyz             #Output file center of mass
+45. 45. 80.	                     #Parameters of the box
+0 9000000	                     #Initial and final step of interest
+3 		                     #Number of atom to describe the molecule
+O		                     #Atom 1: Only the first character is important
+H		                     #Atom 2: Only the first character is important
+H		                     #Atom 3: Only the first character is important
+S S Z                                #Polarization of the light: X, Y, Z, S (S=(X+Y)/2)
+20                                   #Cutoff for the dipole field tensor (over this value it is set to 0)
+0                                    #Activation of the exponential Thole damping factor (0=off) Chem. Phys., 59, (1981), 341-350
+mol                                  #Atomic (3 points) or Molecular (1 point) dipole moment (only the first character is important)
+0 0 0.728                            #Dipole moment of the molecule (X Y Z in the molecular frame)
+mol                                  #Atomic (3 points) or Molecular (1 point) dipole moment (only the first character is important)
+1.626 0 0 0 1.286 0 0 0 1.495        #Polarizability tensor (bottom part: xx, yx, yy, zx, zy, zz. The matrix is symmetric)
+1                                    #Intramolecular DID for 3 points model (0=no). Useless if "molecular"

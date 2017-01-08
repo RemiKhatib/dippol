@@ -1,0 +1,17 @@
+pos.xyz                              #File name of the pos file
+dippol_3P_iso.dat                    #Name of the output file
+center_mass_3P_iso.xyz               #Output file center of mass
+45. 45. 80.	                     #Parameters of the box
+0 9000000	                     #Initial and final step of interest
+3 		                     #Number of atom to describe the molecule
+O		                     #Atom 1: Only the first character is important
+H		                     #Atom 2: Only the first character is important
+H		                     #Atom 3: Only the first character is important
+S S Z                                #Polarization of the light: X, Y, Z, S (S=(X+Y)/2)
+20                                   #Cutoff for the dipole field tensor (over this value it is set to 0)
+1                                    #Activation of the exponential Thole damping factor (0=off) Chem. Phys., 59, (1981), 341-350
+atomic                               #Atomic (3 points) or Molecular (1 point) dipole moment (only the first character is important)
+0.539 0.080                          #Dipole moment of the O and H atoms (only Z in the O and H frames)
+atomic                               #Atomic (3 points) or Molecular (1 point) dipole moment (only the first character is important)
+0.720 0.677 0.696 0.366 0.352 0.371 0 -0.006 0 #Polarizability tensor (Oxx, Oyy, Ozz, Hxx, Hyy, Hzz, Hxy, Hzx, Hzy)
+0                                    #Intramolecular DID for 3 points model (0=no). Useless if "molecular"
